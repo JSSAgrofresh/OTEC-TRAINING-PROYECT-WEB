@@ -29,6 +29,10 @@
       <a href="#cursos" class="nav-link">Cursos</a>
       <a href="#instructores" class="nav-link">Instructores</a>
       <a href="#contacto" class="nav-link nav-cta">Contáctanos</a>
+      <button class="nav-link nav-login" id="loginTrigger" type="button">
+        <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M15 12a4 4 0 1 0-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M3 21c0-4 4-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span id="loginTriggerLabel">Iniciar sesión</span>
+      </button>
     </nav>
 
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
@@ -367,6 +371,20 @@
     <a href="https://www.trainingproyect.cl" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
       Visitar www.trainingproyect.cl
     </a>
+
+    <form class="contact-form" id="contactForm" autocomplete="off">
+      <h3>O déjanos tus datos y te contactamos nosotros</h3>
+      <div class="contact-form-grid">
+        <input type="text" name="nombre" placeholder="Nombre completo" required />
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <input type="tel" name="telefono" placeholder="Teléfono (opcional)" />
+        <input type="text" name="empresa" placeholder="Empresa (opcional)" />
+      </div>
+      <textarea name="mensaje" placeholder="Cuéntanos qué necesitas capacitar…" rows="3" required></textarea>
+      <input type="text" name="website" class="contact-form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+      <p class="contact-form-status" id="contactFormStatus" role="status"></p>
+    </form>
   </div>
 </section>
 
@@ -383,6 +401,48 @@
   <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
+<!-- ============ LOGIN MODAL ============ -->
+<div class="modal-overlay" id="loginOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <button class="modal-close" id="loginClose" type="button" aria-label="Cerrar">&times;</button>
+    <p class="section-kicker">Acceso privado</p>
+    <h3 id="loginTitle" class="modal-title">Iniciar sesión</h3>
+    <form id="loginForm">
+      <input type="email" name="email" placeholder="Correo electrónico" required autocomplete="username" />
+      <input type="password" name="password" placeholder="Contraseña" required autocomplete="current-password" />
+      <button type="submit" class="btn btn-primary">Entrar</button>
+      <p class="modal-status" id="loginStatus" role="status"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ ADMIN PANEL MODAL ============ -->
+<div class="modal-overlay" id="adminOverlay" hidden>
+  <div class="modal modal--wide" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+    <button class="modal-close" id="adminClose" type="button" aria-label="Cerrar">&times;</button>
+    <div class="modal-admin-head">
+      <div>
+        <p class="section-kicker">Panel privado</p>
+        <h3 id="adminTitle" class="modal-title">Registro de contactos</h3>
+      </div>
+      <div class="modal-admin-actions">
+        <button class="btn btn-ghost btn-sm" id="adminRefresh" type="button">Actualizar</button>
+        <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">Cerrar sesión</button>
+      </div>
+    </div>
+    <p class="modal-status" id="adminStatus" role="status"></p>
+    <div class="admin-table-wrap">
+      <table class="admin-table" id="adminTable">
+        <thead>
+          <tr><th>Fecha</th><th>Hora</th><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Empresa</th><th>Mensaje</th></tr>
+        </thead>
+        <tbody id="adminTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/main.js"></script>
+<script src="assets/js/auth.js"></script>
 </body>
 </html>
