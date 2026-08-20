@@ -1,5 +1,11 @@
 const { sign } = require('../lib/auth');
 
+// Fallback usado si ADMIN_EMAIL / ADMIN_PASSWORD no están configurados como variables
+// de entorno en Vercel. Recomendado: configurarlos en Vercel y quitar este fallback,
+// ya que este archivo vive en un repositorio público.
+const FALLBACK_ADMIN_EMAIL = 'tucascarla@gmail.com';
+const FALLBACK_ADMIN_PASSWORD = 'otec2026';
+
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Método no permitido' });
@@ -7,13 +13,8 @@ module.exports = async (req, res) => {
   }
 
   const { email, password } = req.body || {};
-  const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
-  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
-
-  if (!ADMIN_EMAIL || !ADMIN_PASSWORD || !process.env.JWT_SECRET) {
-    res.status(500).json({ error: 'Login no configurado en el servidor (faltan variables de entorno)' });
-    return;
-  }
+  const ADMIN_EMAIL = process.env.ADMIN_EMAIL || FALLBACK_ADMIN_EMAIL;
+  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || FALLBACK_ADMIN_PASSWORD;
 
   if (
     typeof email !== 'string' ||
