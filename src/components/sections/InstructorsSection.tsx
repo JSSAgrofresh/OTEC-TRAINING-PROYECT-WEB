@@ -1,5 +1,5 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import heroFlags from '../../assets/img/hero-flags.jpg';
+import instructorsTeam from '../../assets/img/instructores-team.jpg';
 
 export default function InstructorsSection() {
   const mediaRef = useScrollReveal<HTMLDivElement>();
@@ -15,8 +15,8 @@ export default function InstructorsSection() {
         <div className="split-media reveal" data-reveal data-reveal-dir="right" ref={mediaRef}>
           <div className="media-frame">
             <img
-              src={heroFlags}
-              alt="Instructores de OTEC Training Proyect en la torre de entrenamiento en altura física"
+              src={instructorsTeam}
+              alt="Equipo de instructores de OTEC Training Proyect en la torre de entrenamiento en altura física"
               loading="lazy"
             />
           </div>

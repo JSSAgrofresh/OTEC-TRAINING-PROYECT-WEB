@@ -1,5 +1,5 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import heroFlags from '../../assets/img/hero-flags.jpg';
+import heroImage from '../../assets/img/hero-altura-tower.jpg';
 
 export default function Hero() {
   const eyebrowRef = useScrollReveal<HTMLParagraphElement>();
@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="hero-media">
         <img
-          src={heroFlags}
+          src={heroImage}
           alt="Instructores de OTEC Training Proyect trabajando en altura física sobre torre de andamios"
           className="hero-img"
         />
