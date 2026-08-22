@@ -140,8 +140,10 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
 }
-.brand-logo { height: 40px; width: auto; transition: height 0.4s var(--ease); }
+.brand { flex-shrink: 0; }
+.brand-logo { height: 40px; width: auto; flex-shrink: 0; transition: height 0.4s var(--ease); }
 .is-scrolled .brand-logo { height: 34px; }
 
 .main-nav { display: flex; align-items: center; gap: 30px; }
@@ -771,7 +773,10 @@ h1, h2, h3 {
   .stats-grid { grid-template-columns: 1fr 1fr; row-gap: 34px; }
 }
 
-@media (max-width: 760px) {
+/* El nav horizontal completo (5 links + CTA + botón de sesión) necesita más
+   ancho del que cabe entre 760px y ~1240px; en ese rango pasamos al menú
+   tipo cajón antes de que el nav se desborde, en vez de encogerlo. */
+@media (max-width: 1240px) {
   .main-nav {
     position: fixed;
     top: 0; right: 0;
@@ -790,7 +795,9 @@ h1, h2, h3 {
   .main-nav.is-open { transform: translateX(0); }
   .nav-toggle { display: flex; }
   .nav-cta { margin-top: 6px; }
+}
 
+@media (max-width: 760px) {
   .hero { min-height: 92vh; }
   .hero-content { padding-top: 70px; }
   .feature-grid { grid-template-columns: 1fr; }
@@ -923,3 +930,47 @@ h1, h2, h3 {
 .admin-table td { color: var(--ink-dim); white-space: normal; }
 .admin-table tr:last-child td { border-bottom: none; }
 .admin-table-empty { text-align: center; color: var(--ink-faint); padding: 30px; }
+
+/* ---------- standalone auth pages (/login, /admin) ---------- */
+.auth-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.auth-topbar { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.auth-topbar-inner { display: flex; align-items: center; justify-content: space-between; }
+.auth-back-link {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink-dim);
+  transition: color 0.25s;
+}
+.auth-back-link:hover { color: var(--green); }
+.auth-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+.auth-page .modal {
+  position: static;
+  animation: modalIn 0.4s var(--ease);
+}
+.login-form { display: flex; flex-direction: column; gap: 14px; }
+.login-form input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 13px 16px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  outline: none;
+  transition: border-color 0.25s;
+}
+.login-form input:focus { border-color: var(--green); }
+.login-form input::placeholder { color: var(--ink-faint); }
+.login-form .btn { width: 100%; justify-content: center; margin-top: 4px; }
+@media (max-width: 560px) {
+  .auth-page { padding: 32px 16px; }
+  .modal-admin-head { flex-direction: column; align-items: stretch; }
+}
