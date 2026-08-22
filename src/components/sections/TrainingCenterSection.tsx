@@ -14,7 +14,7 @@ const FEATURES = [
       </svg>
     ),
     title: 'Torres de entrenamiento en altura física',
-    text: 'Estructuras de andamiaje multidireccional donde cada alumno practica montaje, desmontaje, izaje y rescate en las mismas condiciones que encontrará en faena.',
+    text: 'Estructuras de andamiaje multidireccional donde los trabajadores aprenden a controlar los riesgos reales que tendrán en faena.',
   },
   {
     icon: (

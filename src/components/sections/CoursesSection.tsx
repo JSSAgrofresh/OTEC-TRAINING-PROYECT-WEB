@@ -42,8 +42,8 @@ export default function CoursesSection() {
           <p className="section-kicker">Nuestros cursos</p>
           <h2 className="section-title">Del código SENCE a la faena real</h2>
           <p className="section-sub">
-            Formación presencial, e-learning y directa — dictada por ingenieros certificados en
-            EE.UU. bajo criterios ANSI/ASSE Z359 y 29 CFR OSHA 1910/1926.
+            Formación presencial y e-learning — dictada por ingenieros certificados en EE.UU.
+            bajo criterios ANSI/ASSE Z359 y 29 CFR OSHA 1910/1926.
           </p>
         </div>
 
@@ -83,13 +83,13 @@ export default function CoursesSection() {
           <div className="course-table">
             <div className="course-row course-row--head">
               <span>Curso</span>
-              <span>Código SENCE</span>
+              <span></span>
               <span>Horas</span>
             </div>
             {filteredSence.map((c, i) => (
               <div className="course-row" key={`${c.codigoSence}-${i}`}>
                 <span>{c.nombre}</span>
-                <span className="course-code">{c.codigoSence}</span>
+                <span></span>
                 <span className="course-hours">{c.horas} h</span>
               </div>
             ))}
