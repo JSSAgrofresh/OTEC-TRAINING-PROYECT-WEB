@@ -5,6 +5,7 @@ import TrainingCenterSection from '../components/sections/TrainingCenterSection'
 import CertificationsSection from '../components/sections/CertificationsSection';
 import CoursesSection from '../components/sections/CoursesSection';
 import InstructorsSection from '../components/sections/InstructorsSection';
+import GallerySection from '../components/sections/GallerySection';
 import ContactSection from '../components/sections/ContactSection';
 
 export default function LandingPage() {
@@ -17,6 +18,7 @@ export default function LandingPage() {
       <CertificationsSection />
       <CoursesSection />
       <InstructorsSection />
+      <GallerySection />
       <ContactSection />
     </>
   );
