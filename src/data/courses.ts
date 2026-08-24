@@ -7,7 +7,7 @@ export const SENCE_COURSES: SenceCourse[] = [
   { nombre: 'Técnicas para Ejecución Segura de Trabajos en Altura Física / Pérdida de Equilibrio RF N°2', codigoSence: '1238063854', horas: 8 },
   { nombre: 'Técnicas para Interacción de Trabajos en Espacios Confinados / RF N°11', codigoSence: '1238063856', horas: 8 },
   { nombre: 'Técnicas para el Montaje, Desmontaje y Uso de Andamios Multidireccionales / RF N°2', codigoSence: '1238039585', horas: 16 },
-  { nombre: 'Técnicas para el Montaje, Desmontaje y Uso de Andamios Multidireccionales', codigoSence: '1238063855', horas: 8 },
+  { nombre: 'Técnicas para el Montaje, Desmontaje y Uso de Andamios Multidireccionales / RF N°2', codigoSence: '1238063855', horas: 8 },
   { nombre: 'Técnicas para Manejo, Almacenamiento y Transporte Seguro de Sustancias Peligrosas / RF N°7', codigoSence: '1238063861', horas: 8 },
   { nombre: 'Técnicas para Control de Cargas en Tareas de Izaje. En Baja / RF N°3', codigoSence: '1238063865', horas: 16 },
   { nombre: 'Técnicas para el Control y Manejo de Cargas Mineras. En Baja Re-Instrucción / RF N°3', codigoSence: '1238063869', horas: 8 },
@@ -27,6 +27,9 @@ export const SENCE_COURSES: SenceCourse[] = [
   { nombre: 'Técnicas de Conducción Segura en Vehículos 4x2 y 4x4 / RF N°10', codigoSence: '1238034935', horas: 8 },
   { nombre: 'Manejo Seguro de Herramientas Críticas', codigoSence: '1238092096', horas: 8 },
   { nombre: 'Aplicación de Metodología de Análisis Causal de Incidentes Operacionales (ICAM)', codigoSence: '1238093663', horas: 8 },
+  { nombre: 'Técnicas para la Ejecución de Trabajos en Caliente', codigoSence: '', horas: 8 },
+  { nombre: 'Curso Inducción SSO Codelco', codigoSence: '', horas: 8 },
+  { nombre: 'Técnicas para la Ejecución de Trabajos de Vientero', codigoSence: '', horas: 8 },
 ];
 
 export const DIRECT_COURSES: DirectCourse[] = [
@@ -48,6 +51,10 @@ export const DIRECT_COURSES: DirectCourse[] = [
   { nombre: 'Liderazgo y Trabajo en Equipo', horas: 8 },
   { nombre: 'Técnicas para la Orientación al Cambio y Desarrollo de Personas', horas: 8 },
   { nombre: 'Responsabilidad Civil y Penal frente a Accidentes y Enfermedades Profesionales', horas: 8 },
+  { nombre: 'Técnicas para Trabajos en Vertical', horas: 48 },
+  { nombre: 'Técnicas para la Aplicación de Primeros Auxilios Psicológicos', horas: 8 },
+  { nombre: 'Inducción Hombre Nuevo', horas: 8 },
+  { nombre: 'Técnicas para la Introducción al Rescate Industrial en Altura', horas: 24 },
 ];
 
 export const CODELCO_RF: RiesgoFatalidad[] = [

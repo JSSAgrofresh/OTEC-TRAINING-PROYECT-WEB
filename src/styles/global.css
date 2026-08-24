@@ -812,6 +812,19 @@ h1, h2, h3 {
 .footer-logo { height: 30px; opacity: 0.85; }
 .site-footer p { margin: 0; color: var(--ink-faint); font-size: 0.9rem; }
 .footer-fine { font-size: 0.8rem; opacity: 0.6; }
+.footer-social { display: flex; gap: 12px; }
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--ink-faint);
+  transition: all 0.25s;
+}
+.footer-social-link svg { width: 18px; height: 18px; }
+.footer-social-link:hover { border-color: var(--green); color: var(--green); transform: translateY(-3px); }
 
 /* ---------- back to top ---------- */
 .to-top {

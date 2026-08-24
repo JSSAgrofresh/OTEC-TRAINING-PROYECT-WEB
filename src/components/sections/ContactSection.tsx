@@ -41,7 +41,7 @@ export default function ContactSection() {
         <h2 className="section-title">Tu próxima capacitación puede empezar esta semana</h2>
         <p className="section-sub">
           Cuéntanos qué riesgos necesitas cubrir y armamos un plan de formación a la medida de tu
-          faena &mdash; presencial, e-learning o directo en terreno.
+          faena &mdash; presencial o directo en terreno.
         </p>
 
         <div className="contact-grid">

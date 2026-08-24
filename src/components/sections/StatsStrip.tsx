@@ -26,7 +26,7 @@ export default function StatsStrip() {
           <span className="stat-number">
             <AnimatedCounter target={1} />ª
           </span>
-          <span className="stat-label">OTEC LatAm con licencia ANSI/ASSP Z359</span>
+          <span className="stat-label">OTEC en Chile con licencia ANSI/ASSP Z359</span>
         </div>
       </div>
     </section>
