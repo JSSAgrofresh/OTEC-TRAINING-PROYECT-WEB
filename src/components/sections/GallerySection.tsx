@@ -9,6 +9,22 @@ import proyectoMujeres from '../../assets/img/proyecto-mujeres.jpg';
 import equipoTorre from '../../assets/img/equipo-7.jpg';
 import equipoGrupo from '../../assets/img/equipo-2.jpg';
 import izajeRescate2 from '../../assets/img/izaje-rescate-2.jpg';
+import torreNocturna1 from '../../assets/img/torre-nocturna-1.jpg';
+import alturaAscenso1 from '../../assets/img/altura-ascenso-1.jpg';
+import espaciosConfinadosVentana from '../../assets/img/espacios-confinados-ventana.jpg';
+import salaElectricaLoto from '../../assets/img/sala-electrica-loto.jpg';
+import muroEscalada1 from '../../assets/img/muro-escalada-1.jpg';
+import briefingGrupo from '../../assets/img/briefing-grupo.jpg';
+import alturaDescenso from '../../assets/img/altura-descenso.jpg';
+import rescateDetalleManos from '../../assets/img/rescate-detalle-manos.jpg';
+import torreBanner from '../../assets/img/torre-banner.jpg';
+import plataformaScaffold from '../../assets/img/plataforma-scaffold.jpg';
+import espaciosConfinadosHatch from '../../assets/img/espacios-confinados-hatch.jpg';
+import alturaTejado from '../../assets/img/altura-tejado.jpg';
+import trabajoTuberias from '../../assets/img/trabajo-tuberias.jpg';
+import alturaArbol from '../../assets/img/altura-arbol.jpg';
+import muroEscalada2 from '../../assets/img/muro-escalada-2.jpg';
+import torreNocturna2 from '../../assets/img/torre-nocturna-2.jpg';
 
 const PHOTOS = [
   { src: torreEquipo, alt: 'Equipo entrenando en la torre de altura física' },
@@ -20,6 +36,22 @@ const PHOTOS = [
   { src: equipoTorre, alt: 'Grupo de alumnos en la torre, con vista a Calama de fondo' },
   { src: equipoGrupo, alt: 'Grupo de alumnos al finalizar un curso' },
   { src: izajeRescate2, alt: 'Maniobra de rescate en altura, vista desde la torre' },
+  { src: torreNocturna1, alt: 'Torre de entrenamiento iluminada de noche' },
+  { src: alturaAscenso1, alt: 'Alumno ascendiendo la torre de altura física' },
+  { src: espaciosConfinadosVentana, alt: 'Práctica de ingreso a espacio confinado por ventana de acceso' },
+  { src: salaElectricaLoto, alt: 'Práctica de bloqueo y etiquetado (LOTO) en sala eléctrica' },
+  { src: muroEscalada1, alt: 'Alumno en el muro de escalada de la torre' },
+  { src: briefingGrupo, alt: 'Briefing grupal antes de una práctica en altura' },
+  { src: alturaDescenso, alt: 'Alumno descendiendo por la estructura de andamios' },
+  { src: rescateDetalleManos, alt: 'Detalle de manos asegurando equipo de rescate' },
+  { src: torreBanner, alt: 'Torre de entrenamiento con bandera y banner de OTEC Training Proyect' },
+  { src: plataformaScaffold, alt: 'Alumno de pie en la plataforma superior del andamio' },
+  { src: espaciosConfinadosHatch, alt: 'Práctica de ingreso a espacio confinado por escotilla' },
+  { src: alturaTejado, alt: 'Práctica en altura física con vista a los techos de Calama' },
+  { src: trabajoTuberias, alt: 'Práctica de trabajo con tuberías y válvulas' },
+  { src: alturaArbol, alt: 'Alumno en la torre de entrenamiento junto a un instructor' },
+  { src: muroEscalada2, alt: 'Alumno asegurado en el muro de escalada' },
+  { src: torreNocturna2, alt: 'Vista nocturna de la torre de entrenamiento con banner de OTEC' },
 ];
 
 function GalleryTile({ photo, index, delay, onOpen }: { photo: (typeof PHOTOS)[number]; index: number; delay: number; onOpen: (i: number) => void }) {
