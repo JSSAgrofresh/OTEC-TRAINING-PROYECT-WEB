@@ -96,7 +96,7 @@ export default function GallerySection() {
 
         <div className="gallery-grid">
           {PHOTOS.map((photo, i) => (
-            <GalleryTile key={photo.src} photo={photo} index={i} delay={(i % 3) + 1} onOpen={setOpenIndex} />
+            <GalleryTile key={photo.src} photo={photo} index={i} delay={i % 6} onOpen={setOpenIndex} />
           ))}
         </div>
       </div>
