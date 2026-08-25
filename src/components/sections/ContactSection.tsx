@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import { addContact } from '../../services/contactsService';
 import type { ContactFormInput } from '../../types/contact';
+import { OTEC_MAPS_URL } from '../../utils/location';
 
 export default function ContactSection() {
   const contentRef = useScrollReveal<HTMLDivElement>();
@@ -71,7 +72,7 @@ export default function ContactSection() {
             </div>
           </a>
 
-          <div className="contact-card contact-card--static">
+          <a className="contact-card" href={OTEC_MAPS_URL} target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M12 22s8-7.4 8-13a8 8 0 1 0-16 0c0 5.6 8 13 8 13Z"
@@ -85,7 +86,7 @@ export default function ContactSection() {
               <span>Visítanos</span>
               <strong>Calle 1 Sur #899, Villa Exótica, Calama</strong>
             </div>
-          </div>
+          </a>
         </div>
 
         <a href="https://www.trainingproyect.cl" target="_blank" rel="noopener" className="btn btn-primary btn-lg">

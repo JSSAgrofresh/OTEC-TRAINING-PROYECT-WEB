@@ -1,4 +1,5 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import { OTEC_MAPS_EMBED_URL, OTEC_MAPS_URL } from '../../utils/location';
 
 export default function MissionSection() {
   const mediaRef = useScrollReveal<HTMLDivElement>();
@@ -12,14 +13,28 @@ export default function MissionSection() {
     <section className="section" id="nosotros">
       <div className="container split-layout">
         <div className="split-media reveal" data-reveal data-reveal-dir="left" ref={mediaRef}>
-          <div className="media-frame media-frame--graphic">
+          <a
+            className="media-frame media-frame--graphic media-frame--map"
+            href={OTEC_MAPS_URL}
+            target="_blank"
+            rel="noopener"
+            aria-label="Ver la ubicación de OTEC Training Proyect en Google Maps"
+          >
             <div className="media-rings" aria-hidden="true">
               <span></span>
               <span></span>
               <span></span>
             </div>
             <p className="media-quote">&ldquo;Salvar una vida tras la eliminación de los accidentes fatales.&rdquo;</p>
-          </div>
+            <iframe
+              className="media-map"
+              src={OTEC_MAPS_EMBED_URL}
+              title="Mapa de ubicación de OTEC Training Proyect"
+              loading="lazy"
+              tabIndex={-1}
+              aria-hidden="true"
+            />
+          </a>
           <div className="media-badge">
             <strong>Calama</strong>
             <span>Región de Antofagasta</span>
