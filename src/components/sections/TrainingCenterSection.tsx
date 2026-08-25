@@ -1,7 +1,11 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import alturaImg from '../../assets/img/altura-fisica-vertical.jpg';
+import deaImg from '../../assets/img/primeros-auxilios-1.jpg';
+import personalImg from '../../assets/img/instructor-portada.jpg';
 
 const FEATURES = [
   {
+    image: alturaImg,
     icon: (
       <svg viewBox="0 0 48 48" fill="none">
         <path
@@ -17,6 +21,7 @@ const FEATURES = [
     text: 'Estructuras de andamiaje multidireccional donde los trabajadores aprenden a controlar los riesgos reales que tendrán en faena.',
   },
   {
+    image: deaImg,
     icon: (
       <svg viewBox="0 0 48 48" fill="none">
         <path
@@ -32,6 +37,7 @@ const FEATURES = [
     text: 'Estación de emergencias con desfibrilador externo automático, camilla de rescate, kit de férulas y algoritmo de cadena de supervivencia, integrada a nuestro plan de emergencia y evacuación.',
   },
   {
+    image: personalImg,
     icon: (
       <svg viewBox="0 0 48 48" fill="none">
         <circle cx="24" cy="24" r="19" stroke="currentColor" strokeWidth="2.4" />
@@ -47,9 +53,14 @@ function FeatureCard({ feature, delay }: { feature: (typeof FEATURES)[number]; d
   const ref = useScrollReveal<HTMLDivElement>(delay);
   return (
     <div className="feature-card reveal" data-reveal ref={ref}>
+      <div className="feature-card-media">
+        <img src={feature.image} alt={feature.title} loading="lazy" />
+      </div>
       <div className="feature-icon">{feature.icon}</div>
-      <h3>{feature.title}</h3>
-      <p>{feature.text}</p>
+      <div className="feature-card-body">
+        <h3>{feature.title}</h3>
+        <p>{feature.text}</p>
+      </div>
     </div>
   );
 }

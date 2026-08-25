@@ -1,5 +1,5 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import heroFlags from '../../assets/img/hero-flags.jpg';
+import heroImage from '../../assets/img/hero-altura-tower.jpg';
 
 export default function Hero() {
   const eyebrowRef = useScrollReveal<HTMLParagraphElement>();
@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="hero-media">
         <img
-          src={heroFlags}
+          src={heroImage}
           alt="Instructores de OTEC Training Proyect trabajando en altura física sobre torre de andamios"
           className="hero-img"
         />
@@ -36,7 +36,7 @@ export default function Hero() {
         <p className="hero-lead reveal" data-reveal ref={leadRef}>
           OTEC Training Proyect SpA es el centro de entrenamiento y capacitación minera que
           transforma protocolos de seguridad en habilidades reales, con instructores certificados
-          en Estados Unidos y una licencia que hoy solo nosotros tenemos en toda Latinoamérica.
+          en Estados Unidos y una licencia que hoy solo nosotros tenemos en Chile.
         </p>
         <div className="hero-actions reveal" data-reveal ref={actionsRef}>
           <a href="#cursos" className="btn btn-primary">

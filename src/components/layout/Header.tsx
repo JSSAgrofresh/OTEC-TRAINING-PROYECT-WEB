@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { href: '#certificaciones', label: 'Certificaciones' },
   { href: '#cursos', label: 'Cursos' },
   { href: '#instructores', label: 'Instructores' },
+  { href: '#galeria', label: 'Galería' },
 ];
 
 export default function Header({ isScrolled }: { isScrolled: boolean }) {

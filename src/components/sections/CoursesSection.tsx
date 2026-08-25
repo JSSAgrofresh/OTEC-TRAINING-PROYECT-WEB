@@ -42,8 +42,8 @@ export default function CoursesSection() {
           <p className="section-kicker">Nuestros cursos</p>
           <h2 className="section-title">Del código SENCE a la faena real</h2>
           <p className="section-sub">
-            Formación presencial y e-learning — dictada por ingenieros certificados en EE.UU.
-            bajo criterios ANSI/ASSE Z359 y 29 CFR OSHA 1910/1926.
+            Formación presencial — dictada por ingenieros certificados en EE.UU. bajo criterios
+            ANSI/ASSE Z359 y 29 CFR OSHA 1910/1926.
           </p>
         </div>
 
