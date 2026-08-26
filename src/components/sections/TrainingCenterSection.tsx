@@ -22,6 +22,7 @@ const FEATURES = [
   },
   {
     image: deaImg,
+    imgPosition: '50% 68%',
     icon: (
       <svg viewBox="0 0 48 48" fill="none">
         <path
@@ -54,7 +55,12 @@ function FeatureCard({ feature, delay }: { feature: (typeof FEATURES)[number]; d
   return (
     <div className="feature-card reveal" data-reveal ref={ref}>
       <div className="feature-card-media">
-        <img src={feature.image} alt={feature.title} loading="lazy" />
+        <img
+          src={feature.image}
+          alt={feature.title}
+          loading="lazy"
+          style={feature.imgPosition ? { objectPosition: feature.imgPosition } : undefined}
+        />
       </div>
       <div className="feature-icon">{feature.icon}</div>
       <div className="feature-card-body">
