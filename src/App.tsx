@@ -5,6 +5,7 @@ import ProtectedRoute from './routes/ProtectedRoute';
 import LandingPage from './pages/LandingPage';
 import LoginPage from './pages/LoginPage';
 import AdminPage from './pages/AdminPage';
+import GalleryPage from './pages/GalleryPage';
 
 export default function App() {
   return (
@@ -14,6 +15,14 @@ export default function App() {
         element={
           <MainLayout>
             <LandingPage />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/galeria"
+        element={
+          <MainLayout>
+            <GalleryPage />
           </MainLayout>
         }
       />
