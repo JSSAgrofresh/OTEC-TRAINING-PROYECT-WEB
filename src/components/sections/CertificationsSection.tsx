@@ -4,7 +4,7 @@ const CERTS = [
   {
     tag: 'Única en Chile',
     title: 'Licencia ANSI/ASSP Z359 — Protección Contra Caídas',
-    text: 'En agosto de 2024, OTEC Training Proyect SpA obtuvo la licencia de Protección Contra Caídas ANSI Z359, otorgada por la American Society of Safety Professionals (ASSP), certificando a sus instructores como los únicos en Chile con esta acreditación.',
+    text: 'En agosto de 2024, OTEC Training Proyect SpA obtuvo la licencia de Protección Contra Caídas ANSI Z359, otorgada por la American Society of Safety Professionals (ASSP), certificando a sus instructores como los únicos en Chile con esta licencia y certificación.',
     highlight: true,
   },
   {
