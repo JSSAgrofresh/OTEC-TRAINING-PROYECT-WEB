@@ -4,12 +4,11 @@ import { useAuth } from '../../hooks/useAuth';
 import logo from '../../assets/img/logo.png';
 
 const NAV_LINKS = [
-  { href: '#nosotros', label: 'Nosotros' },
-  { href: '#centro', label: 'Centro de Entrenamiento' },
-  { href: '#certificaciones', label: 'Certificaciones' },
-  { href: '#cursos', label: 'Cursos' },
-  { href: '#instructores', label: 'Instructores' },
-  { href: '#galeria', label: 'Galería' },
+  { href: '/#nosotros', label: 'Nosotros' },
+  { href: '/#centro', label: 'Centro de Entrenamiento' },
+  { href: '/#certificaciones', label: 'Certificaciones' },
+  { href: '/#cursos', label: 'Cursos' },
+  { href: '/#instructores', label: 'Instructores' },
 ];
 
 export default function Header({ isScrolled }: { isScrolled: boolean }) {
@@ -39,7 +38,10 @@ export default function Header({ isScrolled }: { isScrolled: boolean }) {
               {link.label}
             </a>
           ))}
-          <a href="#contacto" className="nav-link nav-cta" onClick={closeMenu}>
+          <Link to="/galeria" className="nav-link" onClick={closeMenu}>
+            Galería
+          </Link>
+          <a href="/#contacto" className="nav-link nav-cta" onClick={closeMenu}>
             Contáctanos
           </a>
           <button
