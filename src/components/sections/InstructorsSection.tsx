@@ -1,5 +1,5 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import instructorsTeam from '../../assets/img/instructores-team.jpg';
+import instructorsTeam from '../../assets/img/curso-altura-fisica-dic2025.jpg';
 
 export default function InstructorsSection() {
   const mediaRef = useScrollReveal<HTMLDivElement>();
@@ -16,7 +16,7 @@ export default function InstructorsSection() {
           <div className="media-frame">
             <img
               src={instructorsTeam}
-              alt="Equipo de instructores de OTEC Training Proyect en la torre de entrenamiento en altura física"
+              alt="Instructor de OTEC Training Proyect dirigiendo una práctica de trabajo en altura física"
               loading="lazy"
             />
           </div>
