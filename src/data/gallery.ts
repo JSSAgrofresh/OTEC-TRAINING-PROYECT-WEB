@@ -23,6 +23,7 @@ import trabajoTuberias from '../assets/img/trabajo-tuberias.jpg';
 import alturaArbol from '../assets/img/altura-arbol.jpg';
 import muroEscalada2 from '../assets/img/muro-escalada-2.jpg';
 import torreNocturna2 from '../assets/img/torre-nocturna-2.jpg';
+import instructorPortada from '../assets/img/instructor-portada.jpg';
 
 export type GalleryPhoto = { src: string; alt: string };
 
@@ -31,6 +32,7 @@ const BASE_PHOTOS: GalleryPhoto[] = [
   { src: rescateDetalle, alt: 'Detalle de equipo de rescate en altura' },
   { src: equipoCloseup, alt: 'Instructor revisando equipo de anclaje junto a alumnos' },
   { src: izajeRescate, alt: 'Maniobra de izaje y rescate en altura' },
+  { src: instructorPortada, alt: 'Instructor en entrenamiento de trabajo en altura' },
   { src: extintores, alt: 'Práctica de uso de extintores portátiles' },
   { src: proyectoMujeres, alt: 'Participantes del programa de formación para mujeres en minería' },
   { src: equipoTorre, alt: 'Grupo de alumnos en la torre con vista a Calama' },
