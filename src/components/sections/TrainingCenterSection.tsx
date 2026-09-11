@@ -1,7 +1,7 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import alturaImg from '../../assets/img/altura-fisica-vertical.jpg';
 import deaImg from '../../assets/img/primeros-auxilios-1.jpg';
-import personalImg from '../../assets/img/instructor-portada-nueva.jpeg';
+import personalImg from '../../assets/img/instructor-portada.jpg';
 
 const FEATURES = [
   {

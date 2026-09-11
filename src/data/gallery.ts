@@ -23,16 +23,34 @@ import trabajoTuberias from '../assets/img/trabajo-tuberias.jpg';
 import alturaArbol from '../assets/img/altura-arbol.jpg';
 import muroEscalada2 from '../assets/img/muro-escalada-2.jpg';
 import torreNocturna2 from '../assets/img/torre-nocturna-2.jpg';
-import instructorPortada from '../assets/img/instructor-portada.jpg';
+import socorristasDemostracion from '../assets/img/socorristas-demostracion.jpg';
+import socorristasClasePatio from '../assets/img/socorristas-clase-patio.jpg';
+import socorristasRcpGrupo from '../assets/img/socorristas-rcp-grupo.jpg';
+import socorristasRcpPractica from '../assets/img/socorristas-rcp-practica.jpg';
+import socorristasEvaluacion from '../assets/img/socorristas-evaluacion.jpg';
+import socorristasKitEmergencia from '../assets/img/socorristas-kit-emergencia.jpg';
+import socorristasAulaDea from '../assets/img/socorristas-aula-dea.jpg';
+import equipamientoDeaPrimerosAuxilios from '../assets/img/equipamiento-dea-primeros-auxilios.jpg';
+import socorristasExtintores from '../assets/img/socorristas-extintores.jpg';
+import socorristasExtintorFuego from '../assets/img/socorristas-extintor-fuego.jpg';
 
 export type GalleryPhoto = { src: string; alt: string };
 
 const BASE_PHOTOS: GalleryPhoto[] = [
+  { src: socorristasDemostracion, alt: 'Instructores demostrando RCP a un grupo de jóvenes en el centro de entrenamiento' },
+  { src: socorristasClasePatio, alt: 'Clase de primeros auxilios para jóvenes en el patio de prácticas' },
+  { src: socorristasRcpGrupo, alt: 'Jóvenes practicando compresiones de RCP sobre maniquí' },
+  { src: socorristasRcpPractica, alt: 'Alumno practicando compresiones torácicas durante el curso de primeros auxilios' },
+  { src: socorristasEvaluacion, alt: 'Instructora demostrando la evaluación de una víctima en el suelo' },
+  { src: socorristasKitEmergencia, alt: 'Alumna ajustándose la mochila de emergencia durante la práctica' },
+  { src: socorristasAulaDea, alt: 'Instructora explicando el uso del DEA en sala de clases' },
+  { src: equipamientoDeaPrimerosAuxilios, alt: 'Equipamiento de entrenamiento: DEA, chaleco de atragantamiento y botiquín profesional' },
+  { src: socorristasExtintores, alt: 'Jóvenes preparando extintores portátiles antes de la práctica' },
+  { src: socorristasExtintorFuego, alt: 'Práctica de extinción de fuego con extintor portátil' },
   { src: torreEquipo, alt: 'Equipo entrenando en la torre de altura física' },
   { src: rescateDetalle, alt: 'Detalle de equipo de rescate en altura' },
   { src: equipoCloseup, alt: 'Instructor revisando equipo de anclaje junto a alumnos' },
   { src: izajeRescate, alt: 'Maniobra de izaje y rescate en altura' },
-  { src: instructorPortada, alt: 'Instructor en entrenamiento de trabajo en altura' },
   { src: extintores, alt: 'Práctica de uso de extintores portátiles' },
   { src: proyectoMujeres, alt: 'Participantes del programa de formación para mujeres en minería' },
   { src: equipoTorre, alt: 'Grupo de alumnos en la torre con vista a Calama' },
